@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Personal Expense Tracker</h1>
+
+    <form id="expenseForm">
+        <input type="number" id="amount" placeholder="Amount" required>
+        
+        <select id="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Bills</option>
+            <option>Shopping</option>
+            <option>Other</option>
+        </select>
+
+        <input type="date" id="date" required>
+        <input type="text" id="description" placeholder="Description">
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <h2>Total Expense: ₹ <span id="total">0</span></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="expenseList"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
